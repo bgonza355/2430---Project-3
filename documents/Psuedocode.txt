@@ -1,0 +1,79 @@
+class greedyStrats
+#arrays
+list all_experiments
+list selected 
+
+highest_first()
+sort(all_experiments)
+i = len(all_experiments)
+#selected highest value then go to next highest value 
+while kg < 700 {
+add all_experiments[i][rating] to selected
+i - 1
+}
+return selected
+
+Lightest_first()
+sort(all_experiments)
+i = 0
+#select lowest values then next lowest value
+while kg < 700 {
+add all_experiments[i][weight] to selected
+i++
+}
+return selected
+
+ratingWeightRatio()
+selected = []
+rating = []
+i=0
+#first get ratio then store into rating array
+for score in all_experiments
+    score = all_experiments[i][rating] / all_experiments[i][weight]
+    add [all_experiments[i][experiment],score to selected
+
+sort(rating)
+
+j=0
+#selected highest value then go to next highest value
+while kg < 700 {
+add rating[i][score] to selected
+j++
+}
+return selected
+#print results
+DisplayResults()
+print ( highest_first() +ratingWeightRatio()  +Lightest_first()
+
+class bruteForce
+list all_experiments
+
+GenPermutations(list, start, end)
+    if start == end:
+        output(list)
+    else:
+        for i from start to end:
+            swap(list[start], list[i])
+            generatePermutations(list, start + 1, end)
+            swap(list[start], list[i])  # backtrack
+
+IF totalWeight ≤ MAX_WEIGHT THEN:
+    ADD (chosenExperiments, totalWeight, totalRating) TO bestSubsets
+
+# Sort valid subsets by rating 
+SORT bestSubsets BY totalRating 
+
+# Take top 3
+topThree = first 3 elements of bestSubsets
+
+# Output results
+FOR each subset IN topThree DO:
+PRINT "Chosen Experiments:", subset.chosenExperiments
+PRINT "Total Weight:", subset.totalWeight
+PRINT "Total Rating:", subset.totalRating
+
+IF subset is first in topThree THEN:
+    PRINT " THIS IS THE OPTIMAL SUBSET "
+
+#DYNAMIC PROGRAMMING
+My understanding of using dynamic programming to solve the knapsack problem goes like this, we first need to to have 4 variables. We need to have an array of sizes, array of values, the total capacity in this case it will be weight, and track the number of items. We need to make a 2d array to store max value and capacity. We need to create a loop that checks the weight and if it is more than the max capacity we drop it from the list. if the weight is less than max capicity we keep it in the array.
