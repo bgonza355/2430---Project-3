@@ -1,0 +1,8 @@
+For testing our program i decided the best route would to first test the results we get and test the edge cases (empty sets). 
+I did not think we needed to create Junit test for the weight since our methods already make sure to not go pass the limit of 700kg and display total weight of selected experiments.
+For Testing results I manually added the experiments to the expected variable for all 3 of the greedy strategies and tested it against the results derived from each method. 
+I did not test each permutation since the number is too large to manually add the results. 
+So instead I tested that each permutation was created 4096 in total (number of permutations that are less than 700kg is 2356).
+Testing the edges cases (empty set) was pretty straight foward they only contain the subset ∅ (null subset) 
+I tested it by initializing an empty set called expected and used the methods we created and simply used a empty set in the parameters. 
+I could have also tested size of the array but that will only confirm the amount of subsets not what the subsets are
