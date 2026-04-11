@@ -138,17 +138,22 @@ public class permutationGenerator extends Experiment {
 		    FinalRatings.add(best_rating2); FinalWeight.add(bestWeight2);
 		    FinalRatings.add(best_rating3); FinalWeight.add(bestWeight3);
 		    for (int i = 0; i < bestRating.size() ; i++) {
-	            System.out.println("Permutation " + (i + 1) + ":");
-	            //pull out specific permutation
-	            ArrayList<permutationGenerator> singlePermutation = bestRating.get(i);
-	            //use for loop to get out values of specific permutation
-	            for (permutationGenerator item : singlePermutation) {
-	                System.out.println("  " + item.number + ", " + item.name + " " + item.weight +  " " + item.rating);
-	            }
-	            System.out.println("Total Rating is " + FinalRatings.get(i));
-	            System.out.println("Total Weight is " + FinalWeight.get(i));
-	            System.out.println();
-	        }
+		        System.out.println("Permutation " + (i + 1) + ":");
+		        
+		        // Pull out specific permutation
+		        ArrayList<PermutationGenerator> singlePermutation = bestRating.get(i);
+		        
+		        // Use for loop to get out values of specific permutation
+		        for (PermutationGenerator item : singlePermutation) {
+		            
+		            System.out.printf("  #%-2d, %-25s Weight: %3d Rating %d\n", 
+		                              item.number, item.name, item.weight, item.rating);
+		        }
+		        
+		        System.out.println("Total Rating is " + FinalRatings.get(i));
+		        System.out.println("Total Weight is " + FinalWeight.get(i));
+		        System.out.println();
+		    }
 		       
 		    return bestRating;
 		}
