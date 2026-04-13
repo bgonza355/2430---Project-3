@@ -9,25 +9,25 @@ import org.junit.jupiter.api.BeforeEach;
 
 public class TestCases {
 	Experiment[] knapsack = Knapsack.loadExperiments();
-	ArrayList<permutationGenerator> experiments = new ArrayList<>();
-	ArrayList<ArrayList<permutationGenerator>> permutations = new ArrayList<>();
+	ArrayList<PermutationGenerator> experiments = new ArrayList<>();
+	ArrayList<ArrayList<PermutationGenerator>> permutations = new ArrayList<>();
     @BeforeEach
 	public void setUp() {
-    	//all needed variable/set up for permutationgenerator/Knapsack method testing
+    	//all needed variable/set up for PermutationGenerator/Knapsack method testing
     	
     	//array values
-        permutationGenerator clouds = new permutationGenerator(1,"Cloud Patterns",36,5);
-        permutationGenerator SolarFL = new permutationGenerator(2,"Solar Flares",264,9);
-        permutationGenerator SolarPO = new permutationGenerator(3,"Solar Power",188,6);
-        permutationGenerator Binary = new permutationGenerator(4,"Binary Stars",203,8);
-        permutationGenerator Relativity = new permutationGenerator(5,"Relativity",104,8);
-        permutationGenerator Seed = new permutationGenerator(6,"Seed Viability",7,4);
-        permutationGenerator SunSpots = new permutationGenerator(7,"Sun Spots",90,2);
-        permutationGenerator MiceTumors = new permutationGenerator(8,"Mice Tumors",65,8);
-        permutationGenerator PlantGrowth = new permutationGenerator(9,"Microgravity Plant Growth",75,5);
-        permutationGenerator Micrometeorites = new permutationGenerator(10,"Micrometeorites",170,9);
-        permutationGenerator CosmicRays = new permutationGenerator(11,"Cosmic Rays",80,7);
-        permutationGenerator Yeast = new permutationGenerator(12,"Yeast Fermentation",27,4);
+    	PermutationGenerator clouds = new PermutationGenerator(1,"Cloud Patterns",36,5);
+    	PermutationGenerator SolarFL = new PermutationGenerator(2,"Solar Flares",264,9);
+        PermutationGenerator SolarPO = new PermutationGenerator(3,"Solar Power",188,6);
+        PermutationGenerator Binary = new PermutationGenerator(4,"Binary Stars",203,8);
+        PermutationGenerator Relativity = new PermutationGenerator(5,"Relativity",104,8);
+        PermutationGenerator Seed = new PermutationGenerator(6,"Seed Viability",7,4);
+        PermutationGenerator SunSpots = new PermutationGenerator(7,"Sun Spots",90,2);
+        PermutationGenerator MiceTumors = new PermutationGenerator(8,"Mice Tumors",65,8);
+        PermutationGenerator PlantGrowth = new PermutationGenerator(9,"Microgravity Plant Growth",75,5);
+        PermutationGenerator Micrometeorites = new PermutationGenerator(10,"Micrometeorites",170,9);
+        PermutationGenerator CosmicRays = new PermutationGenerator(11,"Cosmic Rays",80,7);
+        PermutationGenerator Yeast = new PermutationGenerator(12,"Yeast Fermentation",27,4);
     	experiments.add(clouds); experiments.add(Relativity); experiments.add(PlantGrowth);
     	experiments.add(SolarFL); experiments.add(Seed); experiments.add(Micrometeorites);
     	experiments.add(SolarPO); experiments.add(SunSpots); experiments.add(CosmicRays);
@@ -39,7 +39,7 @@ public class TestCases {
     
     @Test
 	void Test_All_Permutations_Are_Created() {	
-    	permutations = permutationGenerator.generate(experiments, 0);
+    	permutations = PermutationGenerator.generate(experiments, 0);
     	int actual = permutations.size();
     	int expected = 4096;
     	assertEquals(actual,expected);
@@ -104,10 +104,10 @@ public class TestCases {
     //edge cases
     @Test
 	void Empty_permutations() {
-    	ArrayList<permutationGenerator> selected = new ArrayList<>();
-    	permutations =  permutationGenerator.generate(selected, 0);
-    	ArrayList<permutationGenerator> empty = new ArrayList<>();
-    	ArrayList<ArrayList<permutationGenerator>> expected = new ArrayList<>();
+    	ArrayList<PermutationGenerator> selected = new ArrayList<>();
+    	permutations =  PermutationGenerator.generate(selected, 0);
+    	ArrayList<PermutationGenerator> empty = new ArrayList<>();
+    	ArrayList<ArrayList<PermutationGenerator>> expected = new ArrayList<>();
     	expected.add(empty);
     	assertEquals(permutations,expected);
 	}
