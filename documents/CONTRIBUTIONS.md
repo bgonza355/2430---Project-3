@@ -37,7 +37,7 @@ TBD
 TBD
 
 **Contributions:**
-- Created repo
+- Created repo and structure
 - Team report
 - explained project structure
 
