@@ -34,7 +34,6 @@ TBD
 ---
 
 ### Bryant Gonzalez Guzman — Communications Lead
-TBD
 
 **Contributions:**
 - Created repo and structure
