@@ -1,4 +1,4 @@
-
+import java.util.Objects;
 
 public class Experiment {
 	int number;
@@ -21,7 +21,8 @@ public class Experiment {
         return String.format("#%-2d %-30s  Weight: %3d kg  Rating: %d",
                 number, name, weight, rating);
     }
-	//overiding for junit testing
+    
+	   
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
