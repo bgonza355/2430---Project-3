@@ -37,18 +37,13 @@ TBD
 TBD
 
 **Contributions:**
-- TBD
-- TBD
-- TBD
+- Created repo
+- Team report
+- explained project structure
 
 
 **Evidence Pointers:**
-- TBD
-    - Commit `TBD`
-- TBD
-    - Commit `TBD`
-- TBD
-    - Commit `TBD`
+- 2430---Project-3/documents/Project3_Report
 ---
 
 ### Alex Gonzalez Monreal — Verification Lead
