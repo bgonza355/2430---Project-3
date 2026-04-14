@@ -1,3 +1,14 @@
+/**
+ * Team:    Group 2
+ * Members: Logan Chess, Bryant Gonzalez Guzman, Alex Gonzalez Monreal
+ * Course:  CS 2430, Section 502
+ * Project: Programming Project 3 - Spring 2026
+ *
+ * JUnit test cases verifying the three greedy strategies and the
+ * brute-force subset generation. Includes edge-case tests for
+ * empty input arrays.
+ */
+
 import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.ArrayList;

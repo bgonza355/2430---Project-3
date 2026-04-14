@@ -1,3 +1,17 @@
+/**
+ * Team:    Group 2
+ * Members: Logan Chess, Bryant Gonzalez Guzman, Alex Gonzalez Monreal
+ * Course:  CS 2430, Section 502
+ * Project: Programming Project 3 - Spring 2026
+ *
+ * This class represents a single science experiment that could be
+ * loaded onto the space shuttle. Each experiment has a unique number,
+ * a descriptive name, a weight in kilograms, and a scientific rating
+ * (1–10 scale). This serves as the base data class used by both the
+ * greedy strategies in Knapsack and the brute-force search in
+ * PermutationGenerator.
+ */
+
 import java.util.Objects;
 
 public class Experiment {

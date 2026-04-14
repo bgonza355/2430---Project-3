@@ -1,3 +1,18 @@
+/**
+ * Team:    Group 2
+ * Members: Logan Chess, Bryant Gonzalez Guzman, Alex Gonzalez Monreal
+ * Course:  CS 2430, Section 502
+ * Project: Programming Project 3 - Spring 2026
+ *
+ * This class handles the brute-force / exhaustive search for Part 2
+ * of the knapsack problem. It generates all 2^n subsets of the
+ * experiment list, filters those that fit within the 700 kg weight
+ * limit, and identifies the top 3 subsets by total rating.
+ *
+ * Extends Experiment so that each element in a subset carries the
+ * same fields (number, name, weight, rating).
+ */
+
 import java.util.ArrayList;
 
 public class PermutationGenerator extends Experiment {
@@ -155,7 +170,8 @@ public class PermutationGenerator extends Experiment {
 		FinalRatings.add(best_rating3);
 		FinalWeight.add(bestWeight3);
 		for (int i = 0; i < bestRating.size(); i++) {
-			System.out.println("Permutation " + (i + 1) + ":");
+			String label = (i == 0) ? " ★ OPTIMAL" : "";
+			System.out.println("Permutation " + (i + 1) + label + ":");
 
 			// Pull out specific permutation
 			ArrayList<PermutationGenerator> singlePermutation = bestRating.get(i);
