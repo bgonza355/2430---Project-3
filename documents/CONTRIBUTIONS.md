@@ -45,19 +45,18 @@
 ---
 
 ### Alex Gonzalez Monreal — Verification Lead
-TBD
 
 **Contributions:**
-- TBD
-- TBD
-- TBD
+- Created test cases
+- created pseudocode draft 
+- Created permutation generator class 
 
 
 **Evidence Pointers:**
+- Test cases 
+    - Commit `ff6b510f1524650f63de0a9252dca1def8679b81`
+- PsuedoCode draft
+     - Commit `9724cd265906c7fef7d04343c9f910660b713b5d`
 - TBD
-    - Commit `TBD`
-- TBD
-    - Commit `TBD`
-- TBD
-    - Commit `TBD`
+    - Commit `6170904fa52d35bf618e9e5db6a10b897e72de4b`
 ---
